@@ -58,6 +58,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+//Edit
 router.get('/:id/edit', async (req, res) => {
     const author = await Author.findById(req.params.id);
     try{
